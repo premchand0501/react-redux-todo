@@ -1,0 +1,62 @@
+.App{
+  max-width: 640px;
+  margin: 10vh auto;
+  padding: 1rem 0;
+  background-color: #0d0d0d;
+  border-radius: 1.5rem;
+  color: #ddd;
+  min-height: 80vh;
+  .logo{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  .filters{
+    background-color: #f3f7fa;
+  }
+  .list-group-item{
+    background-color: #333;
+    flex-basis: 80%;
+    .form-check{
+      .form-check-input{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-top: 0;
+        left: .75rem;
+      }
+    }
+    label{
+      white-space: pre-wrap;
+      word-break: break-all;
+      max-width: 80%;
+    }
+    label:hover{
+      cursor: text;
+      text-decoration: underline !important;
+    }
+  }
+  .list-group-item[disabled]{
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  .delete-btn{
+    font-size: 2rem;
+    padding: 0;
+    width: 4rem;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    bottom: 0px;
+    height: calc(100% + 2px);
+    line-height: 3.5rem;
+    border-radius: 0;
+  }
+  .list-group-item:first-child .delete-btn{
+    border-top-right-radius: 1rem;
+  }
+  .list-group-item:last-child .delete-btn{
+    border-bottom-right-radius: 1rem;
+  }
+}
